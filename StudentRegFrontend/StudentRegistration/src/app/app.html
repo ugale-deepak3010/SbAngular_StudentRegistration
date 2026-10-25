@@ -1,2 +1,3 @@
-<app-student-form></app-student-form>
-<app-student-list></app-student-list>
+<app-student-form [StudentToEdit]="selectedStudent"
+    (refreshList)="listComponent.loadStudents(); selectedStudent = null"></app-student-form>
+<app-student-list #listComponent (edit)="selectedStudent = $event"></app-student-list>

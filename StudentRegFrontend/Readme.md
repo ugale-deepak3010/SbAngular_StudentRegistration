@@ -16,7 +16,7 @@ ng g c student-list
 
 ## 3. add new service
 
-ng g s services/student
+ng g s services/student-service
 
 ## 4. run the app
 
@@ -29,10 +29,12 @@ http://localhost:4200/
 add 
 
 <app-student-form></app-student-form>
+<app-student-list></app-student-list>
+
 
 ## 5.1 import app.ts inside that form component.
 
 
-<app-student-form></app-student-form>
-<app-student-list></app-student-list>
+# 6 add Student as Model
 
+ng g class model/Student
